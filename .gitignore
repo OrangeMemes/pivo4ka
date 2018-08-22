@@ -13,3 +13,11 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+
+
+node_modules/
+
+package-lock.json
+
+*.less
+*.map
