@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background-color: #000066;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, serif;
+  /* font-family: "Fira Code", serif;*/
+}
+.content {
+  background-color: #7f7f7f;
+}
+.content .top {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8vw;
+}
+.content .top .logo {
+  width: 120px;
+  padding-bottom: 30px;
+}
+.content .top .logo img {
+  width: 100%;
+  height: 100%;
+}
+.content .top .logo-login {
+  padding-bottom: 0px;
+}
+.content .top .login-form {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0px;
+}
+.content .top .login-form .form-inp {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+.content .top .login-form .form-inp input {
+  padding: 10px 14px;
+  border: 1px solid #7f7f7f;
+  border-radius: 5px;
+  margin: 0 0 6px 0;
+  font-size: 18.4px;
+}
+.content .top .login-form .form-inp div {
+  padding: 0 0 0 12px;
+  color: #121212;
+  font-size: 12pt;
+}
+.content .top .login-form .form-inp a.sign {
+  font-size: 8pt;
+  color: #0086B3;
+  align-self: center;
+}
+.content .top .login-form .form-inp .sign:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.content .top .login-form .form-btn {
+  text-align: center;
+  min-width: 90px;
+  border: 1px solid #4c4c4c;
+  border-radius: 5px;
+  padding: 11px;
+  margin: 0 0 6px 0;
+  height: 49px;
+}
+.content .top .login-form .form-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.content .top .auth-user span {
+  font-weight: 500;
+}
+.content .main {
+  background-color: #ffffff;
+  padding: 40px 8vw;
+}
+.footer {
+  height: 200px;
+  padding: 20px 8vw;
+  background-color: #424242;
+  font-size: 8pt;
+  color: #a8a8a8;
+}
+.footer .row p {
+  padding: 2px;
+}
+.footer .p-small_light {
+  color: #ffffff;
+}
+/* profile */
+.title-main {
+  font-size: 24pt;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.left-menu {
+  padding-left: 20px;
+  border: 0 solid #000000;
+  border-left-width: 1px;
+  position: fixed;
+}
+.empl {
+  font-size: 18pt;
+  padding: 10px 12px 10px 20px;
+  margin: 14px 0px;
+  min-width: 300px;
+  border: 0 solid #424242;
+  border-left-width: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.empl:hover {
+  cursor: pointer;
+  border-left: 4px solid #f0f00f;
+}
+.emp-info {
+  display: flex;
+  flex-direction: column;
+}
+.profession {
+  font-size: 10pt;
+}
+.btn-edit-user {
+  font-size: 14pt;
+}
+.btn-edit:hover {
+  cursor: pointer;
+  color: #4183c4;
+}
+.btn-edit-place {
+  font-size: 10pt;
+}
+/*# sourceMappingURL=main.css.map */
