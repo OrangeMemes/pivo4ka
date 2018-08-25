@@ -104,15 +104,27 @@ body {
   font-size: 24pt;
   margin-bottom: 28px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: baseline;
   justify-content: space-between;
+}
+.title-main-right {
+  position: sticky;
+  padding-top: 15px;
+  background-color: #ffffff;
+  top: 0px;
+}
+.menu-main {
+  background-color: #ffffff;
+  padding: 20px 8vw;
 }
 .left-menu {
   padding-left: 20px;
   border: 0 solid #000000;
   border-left-width: 1px;
-  position: fixed;
+  position: sticky;
+  top: 15px;
+  margin-top: 15px;
 }
 .empl {
   font-size: 18pt;
@@ -128,7 +140,7 @@ body {
 }
 .empl:hover {
   cursor: pointer;
-  border-left: 4px solid #f0f00f;
+  border-left: 4px solid #ffc732;
 }
 .emp-info {
   display: flex;
@@ -142,7 +154,7 @@ body {
 }
 .btn-edit:hover {
   cursor: pointer;
-  color: #4183c4;
+  color: #e0002e;
 }
 .btn-edit-place {
   font-size: 10pt;
