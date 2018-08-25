@@ -5,6 +5,16 @@ body {
   font-family: Helvetica, serif;
   /* font-family: "Fira Code", serif;*/
 }
+textarea {
+  resize: none;
+}
+.korona-edit {
+  padding: 10px 14px;
+  border: 1px solid #525252;
+  border-radius: 5px;
+  margin: 0 0 6px 0;
+  resize: none;
+}
 .content {
   background-color: #878787;
 }
@@ -65,7 +75,14 @@ body {
   cursor: pointer;
   text-decoration-line: underline;
 }
-.content .top .login-form .form-btn {
+.content .top .auth-user span {
+  font-weight: 500;
+}
+.content .main {
+  background-color: #f7f7f7;
+  padding: 0px 8vw;
+}
+.form-btn {
   text-align: center;
   min-width: 90px;
   border: 1px solid #1f1f1f;
@@ -74,18 +91,11 @@ body {
   margin: 0 0 6px 0;
   height: 49px;
 }
-.content .top .login-form .form-btn:hover {
+.form-btn:hover {
   background-color: #e0002e;
   color: #ffffff;
   cursor: pointer;
   border-color: #e0002e;
-}
-.content .top .auth-user span {
-  font-weight: 500;
-}
-.content .main {
-  background-color: #f7f7f7;
-  padding: 0px 8vw;
 }
 .footer {
   padding: 20px 8vw;
@@ -158,5 +168,10 @@ body {
 }
 .btn-edit-place {
   font-size: 10pt;
+}
+.edit-palce-info {
+  resize: none;
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

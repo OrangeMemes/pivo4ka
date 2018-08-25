@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/assets/javascripts/profile.js"></script>
 </head>
 <body>
 
@@ -15,7 +17,7 @@
             <img src="https://koronapay.com/beta/assets/icons/zk-logotype-clr.svg#zk-logo-clr">
             <div class="title">Чаевые</div>
         </div>
-        <div class="login-form" style="visibility: hidden">
+        <div class="login-form" style="display: none">
             <div class="form-inp">
                 <input type="text">
                 <div>Логин</div>
@@ -43,12 +45,12 @@
                         <div>
                             Теремок
                         </div>
-                        <div class="btn-edit btn-edit-place">
+                        <div class="btn-edit btn-edit-place" id="place-edit">
                             Изменить
                         </div>
                     </div>
-                    <div>
-                        Какая-то инфа о предприятии
+                    <div class="place-info">
+                        <div>Какая-то инфа о предприятии</div>
                     </div>
                 </div>
             </div>
