@@ -61,7 +61,7 @@ textarea {
   margin: 0 0 6px 0;
   font-size: 18.4px;
 }
-.content .top .login-form .form-inp div {
+.content .top .login-form .form-inp .txt-under {
   padding: 0 0 0 12px;
   color: #878787;
   font-size: 12pt;
@@ -118,11 +118,12 @@ textarea {
   align-items: baseline;
   justify-content: space-between;
 }
-.title-main-right {
+.title-main-left {
   position: sticky;
   padding-top: 15px;
   background-color: #ffffff;
   top: 0px;
+  flex-direction: row;
 }
 .menu-main {
   background-color: #ffffff;
@@ -173,5 +174,37 @@ textarea {
   resize: none;
   width: 100%;
   height: auto;
+}
+.adding {
+  display: none;
+}
+.form-inp {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+}
+.form-inp input {
+  padding: 10px 14px;
+  border: 1px solid #525252;
+  border-radius: 5px;
+  margin: 0 0 6px 0;
+  font-size: 18.4px;
+}
+.form-inp .txt-under {
+  padding: 0 0 0 12px;
+  color: #878787;
+  font-size: 12pt;
+}
+.form-inp a.sign {
+  font-size: 8pt;
+  color: #0086B3;
+  align-self: center;
+}
+.form-inp .sign:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.form-inp .form-btn {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

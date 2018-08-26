@@ -1,7 +1,9 @@
 $(document).ready(function () {
     console.log("Hello world")
-    
+
     $("#place-edit").on('click', editPlace);
+    $("#add-user").on('click', openAdd);
+    $("#save-user").on('click', saveAdd);
 
 })
 
@@ -44,4 +46,20 @@ function savePlace() {
     $(".edit-palce-info").remove();
     $(this).remove()
 
+}
+
+function openAdd() {
+
+    $(".adding").css('display', 'inherit');
+    $(".employees-list").css('display', 'none');
+    $(this).css('display','none');
+
+    // $("#tel-num").mask("+7(999) 999 99 99", {placeholder: "+7(___) ___ __ __"});
+
+}
+
+function saveAdd() {
+    $(".adding").css('display', 'none');
+    $(".employees-list").css('display', 'inherit');
+    $("#add-user").css('display', 'inherit');
 }
