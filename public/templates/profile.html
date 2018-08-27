@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/assets/javascripts/bootstrap-formhelpers-phone.js"></script>
     <script src="/assets/javascripts/profile.js"></script>
 </head>
 <body>
@@ -65,20 +66,25 @@
                         </div>
                     </div>
                     <div class="adding">
-                        <div class="form-inp">
-                            <div class="txt-under">Логин</div>
-                            <input type="text">
-                        </div>
-                        <div class="form-inp" >
-                            <div class="txt-under">Телефон</div>
-                            <input type="text"  class="input-medium bfh-phone" data-format="+1 (ddd) ddd-dddd">
-                        </div>
-                        <div class="form-inp">
-                            <div class="form-btn">
-                                Добавить
-                            </div>
-                        </div>
+                        <form>
 
+
+                            <div class="form-inp" name="login-frm">
+                                <div class="txt-under">Логин</div>
+                                <input type="text" name="login">
+                                <div name="warning">Заполните это поле</div>
+                            </div>
+                            <div class="form-inp" name="tel-frm">
+                                <div class="txt-under">Телефон</div>
+                                <input type="text" class="input-medium bfh-phone" data-format="+7 (ddd) ddd-dddd" name="telnum">
+                                <div name="warning">Заполните это поле</div>
+                            </div>
+                            <div class="form-inp">
+                                <div class="form-btn" id="save-user">
+                                    Добавить
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="employees-list">
 

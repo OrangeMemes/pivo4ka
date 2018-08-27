@@ -50,6 +50,8 @@ function savePlace() {
 
 function openAdd() {
 
+    let login_n = $("input[name=login]").val("");
+    let tel_n = $("input[name=telnum]").val("+7");
     $(".adding").css('display', 'inherit');
     $(".employees-list").css('display', 'none');
     $(this).css('display','none');
@@ -59,7 +61,29 @@ function openAdd() {
 }
 
 function saveAdd() {
-    $(".adding").css('display', 'none');
-    $(".employees-list").css('display', 'inherit');
-    $("#add-user").css('display', 'inherit');
+
+    $("div[name=login-frm] div[name=warning]").css('display','none');
+    $("div[name=tel-frm] div[name=warning]").css('display','none');
+
+    let login_n = $("input[name=login]").val();
+    let tel_n = $("input[name=telnum]").val();
+    let tel_reg = /[+]7\s[(]\d{3}[)]\s\d{3}-\d{4}/;
+    console.log(login_n);
+    console.log(tel_n);
+    console.log(tel_reg.test(tel_n))
+
+    if (login_n !== "" && tel_reg.test(tel_n)) {
+
+        $(".adding").css('display', 'none');
+        $(".employees-list").css('display', 'inherit');
+        $("#add-user").css('display', 'inherit');
+    } else {
+        if (login_n === "") {
+            // $("input[name=login]").addClass("warn");
+            $("div[name=login-frm] div[name=warning]").css('display','inherit');
+        }
+        if (!tel_reg.test(tel_n)) {
+            $("div[name=tel-frm] div[name=warning]").css('display','inherit');
+        }
+    }
 }

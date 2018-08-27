@@ -8,6 +8,10 @@ body {
 textarea {
   resize: none;
 }
+.warn {
+  background-color: rgba(240, 44, 44, 0.15);
+  border: 1px solid #e0002e;
+}
 .korona-edit {
   padding: 10px 14px;
   border: 1px solid #525252;
@@ -53,6 +57,9 @@ textarea {
   display: flex;
   flex-direction: column;
   margin: 0px 10px;
+}
+.content .top .login-form .form-inp .form-btn {
+  margin-top: 0px;
 }
 .content .top .login-form .form-inp input {
   padding: 10px 14px;
@@ -206,5 +213,9 @@ textarea {
 }
 .form-inp .form-btn {
   margin-top: 20px;
+}
+div[name=warning] {
+  display: none;
+  color: #e0002e;
 }
 /*# sourceMappingURL=main.css.map */
